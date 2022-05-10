@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import ItemWrapper from '../helpers/ItemWrapper';
 
 export const Container = styled.div`

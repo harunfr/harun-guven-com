@@ -9,6 +9,7 @@ function Projects() {
     <Container>
       {projectsData.map((project) => (
         <Project
+          key={project.id}
           name={project.name}
           screenshotSource={project.screenshotSource}
           sourceSubDir={project.sourceSubDir}

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 import { BsGithub } from 'react-icons/bs'; // BsLinkedin
 import { FaExternalLinkAlt } from 'react-icons/fa'; //

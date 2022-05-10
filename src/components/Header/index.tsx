@@ -11,7 +11,7 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs';
 //   SiVsco,
 // } from 'react-icons/si';
 // import { DiSizzlejs } from 'react-icons/di';
-import avatar from '../../assets/avatar.jpeg';
+import avatar from '../../assets/avatar.webp';
 
 import {
   Container,

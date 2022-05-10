@@ -1,3 +1,8 @@
+readable names for styled components is left in production build intentionally.
+
+
+
+////////////////////////////////////////
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
