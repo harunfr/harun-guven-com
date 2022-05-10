@@ -35,7 +35,7 @@ function Project({
 }: ProjectProps) {
   return (
     <ProjectContainer>
-      <ProjectScreenShot src={screenshotSource} alt="Screen shot of project." />
+      <ProjectScreenShot src={screenshotSource} alt="Screenshot of project." />
       <ProjectInfo>
         <ProjectNameAndLinks>
           <ProjectName>{name}</ProjectName>
