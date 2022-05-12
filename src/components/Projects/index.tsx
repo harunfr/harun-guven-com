@@ -15,6 +15,7 @@ function Projects() {
           sourceSubDir={project.sourceSubDir}
           liveLinkSubDir={project.liveLinkSubDir}
           description={project.description}
+          usedTechnologies={project.usedTechnologies}
         />
       ))}
     </Container>

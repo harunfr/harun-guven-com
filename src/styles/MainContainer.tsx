@@ -1,10 +1,16 @@
 import styled from 'styled-components/macro';
 
 const MainContainer = styled.div`
-  /* margin: 0 auto; */
-  width: 90vw;
-  /* display: grid; */
-  /* gap: 500px; */
+  border: 1px solid red;
+  grid-column: 2 / 3;
+  display: grid;
+  row-gap: 50px;
 `;
 
 export default MainContainer;
+/**
+ * left: 0.14
+ * middle: 0.66
+ * right: 0.2
+ *
+ */

@@ -12,14 +12,16 @@ function App() {
   return (
     <>
       <GlobalStyle />
+
       <MainContainer>
         <Navigation />
         <Header />
-        <main>
-          <Technologies />
-          <Projects />
-          <MyJourney />
-        </main>
+
+        {/* <main> */}
+        <Projects />
+        <Technologies />
+        <MyJourney />
+        {/* </main> */}
         <footer>contact</footer>
       </MainContainer>
     </>

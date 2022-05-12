@@ -6,13 +6,11 @@ import {
   ProjectContainer,
   ProjectScreenShot,
   ProjectInfo,
-  ProjectNameAndLinks,
   ProjectName,
   ProjectLinks,
   Link,
   ProjectDescription,
-  GithubIcon,
-  LiveLink,
+  Footer,
 } from './styles';
 
 interface ProjectProps {
@@ -21,6 +19,7 @@ interface ProjectProps {
   sourceSubDir: string;
   liveLinkSubDir: string;
   description: string;
+  usedTechnologies: string;
 }
 
 const myGithubBaseURL = 'https://github.com/harunfr/';
@@ -32,33 +31,33 @@ function Project({
   sourceSubDir,
   liveLinkSubDir,
   description,
+  usedTechnologies,
 }: ProjectProps) {
   return (
     <ProjectContainer>
       <ProjectScreenShot src={screenshotSource} alt="Screenshot of project." />
       <ProjectInfo>
-        <ProjectNameAndLinks>
-          <ProjectName>{name}</ProjectName>
-          <ProjectLinks>
-            <Link
-              target="_blank"
-              rel="noreferrer noopener"
-              className="source-code-link"
-              href={`${myGithubBaseURL + sourceSubDir}`}
-            >
-              <GithubIcon />
-            </Link>
-            <Link
-              target="_blank"
-              rel="noreferrer noopener"
-              className="source-code-link"
-              href={`${myLiveLinkBaseURL + liveLinkSubDir}`}
-            >
-              <LiveLink />
-            </Link>
-          </ProjectLinks>
-        </ProjectNameAndLinks>
+        <ProjectName>{name}</ProjectName>
         <ProjectDescription>{description}</ProjectDescription>
+        <ProjectLinks>
+          <Link
+            target="_blank"
+            rel="noreferrer noopener"
+            className="source-code-link"
+            href={`${myGithubBaseURL + sourceSubDir}`}
+          >
+            Live Link
+          </Link>
+          <Link
+            target="_blank"
+            rel="noreferrer noopener"
+            className="source-code-link"
+            href={`${myLiveLinkBaseURL + liveLinkSubDir}`}
+          >
+            Source Code
+          </Link>
+        </ProjectLinks>
+        <Footer>{usedTechnologies}</Footer>
       </ProjectInfo>
     </ProjectContainer>
   );

@@ -1,4 +1,4 @@
-import testSource from '../../assets/test.png';
+import testSource from '../../assets/test.webp';
 
 const projectsData = [
   {
@@ -8,7 +8,9 @@ const projectsData = [
     sourceSubDir: 'string;',
     liveLinkSubDir: 'string;',
     description:
-      'lorem ipsum dolor sit amet, I memorized this lorem because I use it pretty much anywhere.',
+      'A large mall was looking for a redesign to improve the online browsing experience for local and international visitors.',
+    usedTechnologies:
+      'User Experience Documentation, Design, HTML/CSS, WordPress Integration',
   },
   {
     id: 2,
@@ -18,6 +20,8 @@ const projectsData = [
     liveLinkSubDir: 'string;',
     description:
       'lorem ipsum dolor sit amet, I memorized this lorem because I use it pretty much anywhere.',
+    usedTechnologies:
+      'User Experience Documentation, Design, HTML/CSS, WordPress Integration',
   },
   {
     id: 3,
@@ -27,6 +31,8 @@ const projectsData = [
     liveLinkSubDir: 'string;',
     description:
       'lorem ipsum dolor sit amet, I memorized this lorem because I use it pretty much anywhere.',
+    usedTechnologies:
+      'User Experience Documentation, Design, HTML/CSS, WordPress Integration',
   },
   {
     id: 4,
@@ -36,6 +42,8 @@ const projectsData = [
     liveLinkSubDir: 'string;',
     description:
       'lorem ipsum dolor sit amet, I memorized this lorem because I use it pretty much anywhere.',
+    usedTechnologies:
+      'User Experience Documentation, Design, HTML/CSS, WordPress Integration',
   },
 ];
 
