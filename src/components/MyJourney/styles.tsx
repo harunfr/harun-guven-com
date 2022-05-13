@@ -1,14 +1,29 @@
 import styled from 'styled-components/macro';
 
 
-export const Container = styled.section``;
+export const Container = styled.section`
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+`;
 
 
 export const StackWrapper = styled.div``;
 export const BoldText = styled.span`
-  font-weight: 500;
+  font-weight: 600;
 `;
-export const Title = styled.h2``;
-export const JourneyWrapper = styled.div``;
-export const JourneyTitle = styled.h3``;
-export const JourneyBody = styled.div``;
+export const Title = styled.h2`
+  color: #0aa0d0;
+`;
+export const JourneyWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6rem;
+`;
+export const JourneyTitle = styled.h3`
+  font-size: 1.25rem;
+  color: #0aa0d0;
+`;
+export const JourneyBody = styled.span`
+
+`;

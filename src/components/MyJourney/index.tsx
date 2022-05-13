@@ -34,11 +34,7 @@ function Technologies() {
           <BoldText>2018:</BoldText>
           {' '}
           I started learning python but after 3
-          months of studying I didn’t found it appealing and quit learning it.
-          2021 & 2022: New years deserve new decisions, so I decided learning
-          programming again, but this time I started with freeCodeCamp and then
-          continued on The Odin Project. Completed nearly all of projects on
-          them.
+          months of studying, I didn’t found it appealing and quit learning it.
         </JourneyBody>
         <JourneyBody>
           <BoldText>2019:</BoldText>
