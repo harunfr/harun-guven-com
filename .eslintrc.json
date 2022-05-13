@@ -42,7 +42,8 @@
         "react/function-component-definition": "off",
         "no-multiple-empty-lines": "off", // change this later, this is for bug.
         "jsx-a11y/anchor-is-valid": "off", // fix this later.
-        "no-unused-vars": "off"
+        "no-unused-vars": "off",
+        "no-nested-ternary": "off" // to be able to use styled components
       }
     }
   ],

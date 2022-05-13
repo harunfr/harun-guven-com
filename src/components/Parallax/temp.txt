@@ -1,0 +1,92 @@
+ul {
+  position: relative;
+  transform: translate3d(0px, 0px, 0px);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 92%;
+  opacity: 1;
+  animation: parallax-pattern 3.1s ease;
+}
+/* //////////////////////////////// */
+
+all-li {
+  height: 100%;
+  width: 120%;
+}
+
+first-li second-li third-li  {
+  position: relative;
+  display: block;
+  left: 0px;
+  top: 0px;
+  transform: translate3d(37.8596px, 15.0104px, 0px); /* */
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+/* //////////////////////////////////// */
+all spans {
+  background-image: url("../images/ota-pattern.png");
+  background-repeat: repeat;
+  display: block;
+  width: 140%;
+  height: 110%;
+  position: relative;
+}
+
+common span {
+  opacity: ${(props) => props.back ? '0.6' : props.middle ? '0.8' : 1};
+  filter: ${(props) => props.back ? 'blur(3px)' : props.middle ? 'blur(2px)' : 1};
+  background-position: ${(props) => props.back ? 'top center' : props.middle ? 'top right' : top left};
+  transform: ${(props) => props.back ? 'scale(0.8)' : props.middle ? 'scale(0.9)' : scale(1)};
+  top: ${(props) => props.back ? '-5%' : props.middle ? '15%' : 0};
+  left: ${(props) => props.back ? '-15%' : props.middle ? '10%' : 0};
+}
+
+first span back {
+  /* opacity: 0.6; */
+  /* filter: blur(3px); */
+  /* background-position: top center; */
+  /* transform: scale(0.8); */
+  /* top: -5%; */
+  /* left: -15%; */
+}
+
+second span middle {
+  /* opacity: 0.8; */
+  /* filter: blur(2px); */
+  /* background-position: top right; */
+  /* transform: scale(0.9); */
+  /* top: 15%; */
+  /* left: 10%; */
+}
+
+third span front {
+  /* background-position: top left; */
+}
+
+
+
+  /* &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to bottom right, #4f00bc 10%, #29abe2 100%);
+  }
+  &::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    background: url(${testBg});
+    background-repeat: repeat;
+    transition: transform 1s linear;
+    transform: translateX(0px);
+  } */

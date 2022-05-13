@@ -1,12 +1,10 @@
 import styled from 'styled-components/macro';
 
-
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
 `;
-
 
 export const StackWrapper = styled.div``;
 export const BoldText = styled.span`
@@ -24,6 +22,4 @@ export const JourneyTitle = styled.h3`
   font-size: 1.25rem;
   color: #0aa0d0;
 `;
-export const JourneyBody = styled.span`
-
-`;
+export const JourneyBody = styled.span``;
