@@ -1,10 +1,12 @@
 import styled from 'styled-components/macro';
 
 const MainContainer = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   grid-column: 2 / 3;
   display: grid;
+  /* flex-direction: column; */
   row-gap: 50px;
+  /* padding: 1rem; */
 `;
 
 export default MainContainer;

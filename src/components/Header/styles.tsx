@@ -6,7 +6,7 @@ import testBg from '../../assets/testBg.png';
 
 export const Container = styled.header`
   margin-top: -100px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 550px;
   padding: 120px 0 150px 0;
   background-color: transparent;

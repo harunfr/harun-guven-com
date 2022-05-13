@@ -41,7 +41,8 @@
         "import/prefer-default-export": "off",
         "react/function-component-definition": "off",
         "no-multiple-empty-lines": "off", // change this later, this is for bug.
-        "jsx-a11y/anchor-is-valid": "off" // fix this later.
+        "jsx-a11y/anchor-is-valid": "off", // fix this later.
+        "no-unused-vars": "off"
       }
     }
   ],

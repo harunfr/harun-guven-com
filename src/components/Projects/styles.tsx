@@ -5,7 +5,7 @@ export const Container = styled.section`
   flex-direction: column;
   gap: 111px;
 
-  border: 5px solid goldenrod;
+  /* border: 5px solid goldenrod; */
   > * {
     &:nth-child(odd) {
       flex-direction: row-reverse;
@@ -17,10 +17,10 @@ export const Container = styled.section`
   &::before {
     content: '';
     position: absolute;
-    top: 469px;
+    top: 470px;
     left: 0px;
     height: 130px;
-    width: 99vw;
+    width: 100vw;
     z-index: 2;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     background-color: gray;
@@ -28,7 +28,7 @@ export const Container = styled.section`
   }
 `;
 export const ProjectContainer = styled.article`
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   display: flex;
   align-items: center;
 `;

@@ -4,9 +4,13 @@ import {
   Container, Logo, NavList, ListItem, Link,
 } from './styles';
 
-function Navigation() {
+interface NavProps {
+  isViewingHeader: boolean;
+}
+
+function Navigation({ isViewingHeader }: NavProps) {
   return (
-    <Container>
+    <Container isViewingHeader={isViewingHeader}>
       <Logo>H + G</Logo>
       <NavList>
         <ListItem>

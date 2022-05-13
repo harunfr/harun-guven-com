@@ -1,15 +1,25 @@
 import styled from 'styled-components/macro';
 import ItemWrapper from '../helpers/ItemWrapper';
 
-export const Container = styled.nav`
+export const Container = styled.nav<{ isViewingHeader: boolean }>`
   position: sticky;
+  z-index: 3;
   width: 100%;
   top: 0;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 3.875rem;
+  background-color: ${(props) =>
+    props.isViewingHeader ? 'transparent' : '#ffffffe5'};
+  border-bottom: ${(props) =>
+    props.isViewingHeader ? 'none' : '1px solid #eee'};
+  transition: background-color 0.5s ease-in;
+
+  & a {
+    color: ${(props) => (props.isViewingHeader ? '#eee' : '#0AA0D0')};
+  }
 `;
 export const Wrapper = styled(ItemWrapper)``;
 

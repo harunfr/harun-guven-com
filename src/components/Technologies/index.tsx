@@ -1,28 +1,19 @@
 import React from 'react';
 
-import { Container, StackWrapper, BoldText } from './styles';
+import { Container, SlidingWrapper } from './styles';
+
+const usedTechnologies = 'Typescript,\u00A0Javascript,\u00A0Webpack,\u00A0React,\u00A0MongoDB,\u00A0Express,\u00A0Node,\u00A0Git,\u00A0Figma\u00A0|\u00A0'.repeat(
+  2,
+);
 
 function Technologies() {
   return (
     <Container>
-      <StackWrapper>
-        <BoldText>Languages:</BoldText>
-        {' '}
-        Typescript, Javascript.
-      </StackWrapper>
-      <StackWrapper>
-        <BoldText>FrontEnd:</BoldText>
-        {' '}
-        HTML, CSS, Webpack, React.
-      </StackWrapper>
-      <StackWrapper>
-        <BoldText>Others & Tools:</BoldText>
-        {' '}
-        MongoDB, Express, Node, Git, Figma,
-        VS Code.
-      </StackWrapper>
+      {/* <FixedWrapper> */}
+      <SlidingWrapper>{usedTechnologies}</SlidingWrapper>
+      {/* </FixedWrapper> */}
     </Container>
   );
 }
-
+// FixedWrapper
 export default Technologies;
