@@ -18,7 +18,7 @@ export default createGlobalStyle`
   margin:0 auto;
   display:grid;
   grid-template-columns: minmax(0,190px) 972px minmax(0,204px);
-  @media (max-width: 920px) {
+  @media (max-width: 990px) {
     grid-template-columns: 0 minmax(0, 900px) 0;
   };
 

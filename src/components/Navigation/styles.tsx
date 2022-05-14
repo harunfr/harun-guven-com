@@ -12,6 +12,7 @@ export const Container = styled.nav<{ isViewingHeader: boolean }>`
   justify-content: space-between;
   align-items: center;
   height: 3.875rem;
+  padding: 0 1rem;
   background-color: ${(props) =>
     props.isViewingHeader ? 'transparent' : '#ffffffe5'};
   border-bottom: ${(props) =>
@@ -31,6 +32,7 @@ export const Wrapper = styled(ItemWrapper)``;
 export const Logo = styled.div`
   // change this to img or smt.
   color: #eee;
+  /* padding-left: 1rem; */
 `;
 
 export const NavList = styled.ul`

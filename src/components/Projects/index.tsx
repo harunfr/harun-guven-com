@@ -2,11 +2,12 @@ import React from 'react';
 
 import Project from './Project';
 import projectsData from './ProjectsData';
-import { Container } from './styles';
+import { Container, Title } from './styles';
 
 function Projects() {
   return (
     <Container>
+      <Title>My Projects</Title>
       {projectsData.map((project) => (
         <Project
           key={project.id}

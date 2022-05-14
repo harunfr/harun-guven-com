@@ -15,6 +15,7 @@ export const Container = styled.div`
   top: 0;
   width: 100%;
   height: 550px;
+  /* height: 100%; */
   overflow: hidden;
 
   /* &::after {

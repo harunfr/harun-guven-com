@@ -4,6 +4,9 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  padding: 0 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.1px;
 `;
 
 export const StackWrapper = styled.div``;

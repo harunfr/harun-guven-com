@@ -4,9 +4,8 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   gap: 111px;
-  /* overflow: hidden; */
+  padding: 0 1rem;
 
-  /* border: 5px solid goldenrod; */
   > * {
     &:nth-child(odd) {
       flex-direction: row-reverse;
@@ -15,37 +14,56 @@ export const Container = styled.section`
       /* flex-direction: row; */
     }
   }
-  &::before {
+`;
+
+export const Title = styled.h2`
+  position: relative;
+  /* border: 1px solid green; */
+  margin:-60px 0 -20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  &::after {
     content: '';
     position: absolute;
-    top: 420px;
-    left: 0px;
-    height: 130px;
-    width: 100%;
-    z-index: 2;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    background-color: #ffffff;
+    /* border: 1px solid blue; */
+    border: none;
+    border-radius: 3px;
+    width: 40px;
+    height: 4px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0aa0d0;
+
   }
+
 `;
+
 export const ProjectContainer = styled.article`
-  /* border: 1px solid greenyellow; */
   display: flex;
   align-items: center;
+  gap: 1rem;
+
+  @media (max-width: 650px) {
+    flex-direction: column !important;
+  }
 `;
 export const ProjectScreenShot = styled.img`
   width: 550px;
-  /* max-height: 285px; */
-  @media (max-width: 1015px) {
+  @media (max-width: 990px) {
     width: 53vw;
-  } ;
+  }
+  @media (max-width: 650px) {
+    width: 90vw;
+  }
 `;
 export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
-  /* border: 4px solid brown; */
   row-gap: 30px;
-  padding: 16px;
-  /* justify-content: space-between; */
 `;
 export const ProjectName = styled.h4`
   align-self: center;
@@ -55,7 +73,6 @@ export const ProjectName = styled.h4`
 `;
 export const ProjectLinks = styled.div``;
 export const Link = styled.a`
-  /* display: block; */
   margin-right: 25px;
   color: #0aa0d0;
   color: '#0AA0D0';
@@ -63,7 +80,9 @@ export const Link = styled.a`
   position: 'relative';
   border-bottom: '1px solid rgba(10,160,208,0.2)';
 `;
-export const ProjectDescription = styled.p``;
+export const ProjectDescription = styled.p`
+  line-height: 1.6;
+`;
 
 export const Footer = styled.footer`
   font-family: 'Lato', Helvetica, sans-serif;
