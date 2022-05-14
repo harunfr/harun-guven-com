@@ -14,6 +14,7 @@ export default createGlobalStyle`
 }
 #root{
   position:relative;
+  /* overflow-y: hidden; */
   margin:0 auto;
   display:grid;
   grid-template-columns: minmax(0,190px) 972px minmax(0,204px);

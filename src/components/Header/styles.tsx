@@ -7,6 +7,16 @@ export const Container = styled.header`
   padding: 120px 0 150px 0;
   background-color: transparent;
   color: #f00;
+
+  /* &::after {
+    clear: both;
+    content: " ";
+    display: table;
+  }
+  &::before {
+    content: " ";
+    display: table;
+  } */
 `;
 
 export const MyName = styled.h1`

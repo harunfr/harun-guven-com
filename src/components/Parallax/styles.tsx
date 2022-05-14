@@ -1,8 +1,10 @@
 import styled from 'styled-components/macro';
-import testBg from '../../assets/testBg.webp';
+// import testBg from '../../assets/testBg.webp';
+import parallaxBackground from '../../assets/parallax-bg.png';
 
 /** horizontal factor is 5.66 for front, 5.66 * 3 / 2 for middle and 5.66 * 3 / 1 for back. */
 /** vertical factor is 8.4 for front, 8.4 * 3 / 2 for middle and 8.4 * 3 / 1 for back. */
+// this transition can be choosen too transition: transform 3s cubic-bezier(0.01, 1.16, 0.26, 1.27);
 
 export const Container = styled.div`
   z-index: -1;
@@ -13,6 +15,17 @@ export const Container = styled.div`
   top: 0;
   width: 100%;
   height: 550px;
+  overflow: hidden;
+
+  /* &::after {
+    clear: both;
+    content: " ";
+    display: table;
+  }
+  &::before {
+    content: " ";
+    display: table;
+  } */
 `;
 
 export const Parallaxes = styled.ul`
@@ -60,15 +73,15 @@ export const ParallaxWrapper = styled.li.attrs<Props>((props) => ({
   width: 120%;
   left: 0px;
   top: 0px;
-  transition: transform 0.2s;
+  transition: transform 0.5s ease-out;
 `;
-
+// cubic-bezier(0.01, 1.16, 0.26, 1.27)
 export const ParallaxItem = styled.div<{
   front?: boolean;
   middle?: boolean;
   back?: boolean;
 }>`
-  background-image: url('${testBg}');
+  background-image: url('${parallaxBackground}');
   background-repeat: repeat;
   display: block;
   width: 140%;

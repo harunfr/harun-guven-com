@@ -2,6 +2,7 @@ import styled from 'styled-components/macro';
 import ItemWrapper from '../helpers/ItemWrapper';
 
 export const Container = styled.nav<{ isViewingHeader: boolean }>`
+  overflow: auto;
   position: sticky;
   z-index: 3;
   width: 100%;

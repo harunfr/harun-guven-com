@@ -4,6 +4,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   gap: 111px;
+  /* overflow: hidden; */
 
   /* border: 5px solid goldenrod; */
   > * {
@@ -17,13 +18,12 @@ export const Container = styled.section`
   &::before {
     content: '';
     position: absolute;
-    top: 470px;
+    top: 420px;
     left: 0px;
     height: 130px;
-    width: 100vw;
+    width: 100%;
     z-index: 2;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    background-color: gray;
     background-color: #ffffff;
   }
 `;

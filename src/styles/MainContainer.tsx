@@ -7,6 +7,7 @@ const MainContainer = styled.div`
   /* flex-direction: column; */
   row-gap: 50px;
   /* padding: 1rem; */
+  /* overflow: hidden; */
 `;
 
 export default MainContainer;
