@@ -14,13 +14,19 @@ function Navigation({ isViewingHeader }: NavProps) {
       <Logo>H + G</Logo>
       <NavList>
         <ListItem>
-          <Link href="projects">Projects</Link>
+          <Link to="projects" offset={-140} smooth spy>
+            Projects
+          </Link>
         </ListItem>
         <ListItem>
-          <Link href="#about">About</Link>
+          <Link to="about" smooth spy>
+            About
+          </Link>
         </ListItem>
         <ListItem>
-          <Link href="#contact">Contact</Link>
+          <Link to="contact" smooth spy>
+            Contact
+          </Link>
         </ListItem>
       </NavList>
     </Container>

@@ -6,7 +6,7 @@ import { Container, Title } from './styles';
 
 function Projects() {
   return (
-    <Container>
+    <Container id="projects">
       <Title>My Projects</Title>
       {projectsData.map((project) => (
         <Project

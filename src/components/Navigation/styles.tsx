@@ -1,4 +1,6 @@
 import styled from 'styled-components/macro';
+import { Link as ScrollLink } from 'react-scroll';
+
 import ItemWrapper from '../helpers/ItemWrapper';
 
 export const Container = styled.nav<{ isViewingHeader: boolean }>`
@@ -42,7 +44,7 @@ export const NavList = styled.ul`
 `;
 
 export const ListItem = styled.li``;
-export const Link = styled.a`
+export const Link = styled(ScrollLink)`
   color: #eee;
   text-decoration: none;
   border: none;

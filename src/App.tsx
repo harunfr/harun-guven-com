@@ -68,7 +68,7 @@ function App() {
         <Technologies />
         <MyJourney />
         {/* </main> */}
-        <footer>contact</footer>
+        <footer id="contact">contact</footer>
       </MainContainer>
     </>
   );

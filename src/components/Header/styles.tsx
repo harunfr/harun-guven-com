@@ -11,7 +11,7 @@ export const Container = styled.header`
     margin-top: -160px;
   }
 
-  /* &::before {
+  &::before {
     content: '';
     position: absolute;
     top: 420px;
@@ -22,9 +22,9 @@ export const Container = styled.header`
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     background-color: #ffffff;
     @media (max-width: 850px) {
-    top: 421px;
+      top: 421px;
+    }
   }
-  } */
 `;
 
 export const MyName = styled.h1`

@@ -18,17 +18,16 @@ export const Container = styled.section`
 
 export const Title = styled.h2`
   position: relative;
-  /* border: 1px solid green; */
-  margin:-60px 0 -20px 0;
+  margin: -60px 0 -20px 0;
   text-align: center;
   text-transform: uppercase;
   font-size: 0.875rem;
   font-weight: 500;
+  letter-spacing: 1.5px;
 
   &::after {
     content: '';
     position: absolute;
-    /* border: 1px solid blue; */
     border: none;
     border-radius: 3px;
     width: 40px;
@@ -37,9 +36,7 @@ export const Title = styled.h2`
     left: 50%;
     transform: translateX(-50%);
     background-color: #0aa0d0;
-
   }
-
 `;
 
 export const ProjectContainer = styled.article`
@@ -53,6 +50,13 @@ export const ProjectContainer = styled.article`
 `;
 export const ProjectScreenShot = styled.img`
   width: 550px;
+  transition: all 0.2s linear;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 26px 49px -27px #cccccc;
+  }
+
   @media (max-width: 990px) {
     width: 53vw;
   }

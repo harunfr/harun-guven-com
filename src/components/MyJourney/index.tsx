@@ -12,7 +12,7 @@ import {
 
 function Technologies() {
   return (
-    <Container>
+    <Container id="about">
       <Title>My journey</Title>
       <JourneyWrapper>
         <JourneyTitle>Starting Out</JourneyTitle>
