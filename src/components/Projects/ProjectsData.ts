@@ -17,34 +17,30 @@ const projectsData: IProjectData[] = [
     id: 1,
     name: 'Riddleey',
     src: riddleeeySrc,
-    repo: 'string;',
-    liveDemo: 'string;',
+    repo: 'riddleeey',
+    liveDemo: 'riddleeey',
     description:
-      'A large mall was looking for a redesign to improve the online browsing experience for local and international visitors.',
-    usedStack:
-      'User Experience Documentation, Design, HTML/CSS, WordPress Integration',
+      'Riddle game using wordle’s interface. Uses rest api to fetch riddles.',
+    usedStack: 'MERN Stack, Typescript, Figma',
   },
   {
     id: 2,
     name: '2048',
     src: t2048Src,
-    repo: 'string;',
-    liveDemo: 'string;',
+    repo: '2048',
+    liveDemo: '2048',
     description:
-      'lorem ipsum dolor sit amet, I memorized this lorem because I use it pretty much anywhere.',
-    usedStack:
-      'User Experience Documentation, Design, HTML/CSS, WordPress Integration',
+      'Was popular game at year 2014. Revamped with minimal animation.',
+    usedStack: 'React, Typescript, Styled-Components',
   },
   {
     id: 3,
     name: 'Battleship',
     src: battleshipSrc,
-    repo: 'string;',
-    liveDemo: 'string;',
-    description:
-      'lorem ipsum dolor sit amet, I memorized this lorem because I use it pretty much anywhere.',
-    usedStack:
-      'User Experience Documentation, Design, HTML/CSS, WordPress Integration',
+    repo: 'battleship',
+    liveDemo: 'battleship',
+    description: 'Classical board game, playable against bot.',
+    usedStack: 'React, Jest, Typescript, Styled-Components',
   },
 ];
 

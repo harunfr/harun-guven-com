@@ -35,7 +35,13 @@ function Project({
 }: ProjectProps) {
   return (
     <ProjectContainer>
-      <ProjectScreenShot src={src} alt="Screenshot of project." />
+      <a
+        href={`${myLiveLinkBaseURL + liveDemo}`}
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <ProjectScreenShot src={src} alt="Screenshot of project." />
+      </a>
       <ProjectInfo>
         <ProjectName>{name}</ProjectName>
         <ProjectDescription>{description}</ProjectDescription>
@@ -44,15 +50,15 @@ function Project({
             target="_blank"
             rel="noreferrer noopener"
             className="source-code-link"
-            href={`${myGithubBaseURL + repo}`}
+            href={`${myLiveLinkBaseURL + liveDemo}`}
           >
-            Live Link
+            Live Demo
           </Link>
           <Link
             target="_blank"
             rel="noreferrer noopener"
             className="source-code-link"
-            href={`${myLiveLinkBaseURL + liveDemo}`}
+            href={`${myGithubBaseURL + repo}`}
           >
             Source Code
           </Link>
