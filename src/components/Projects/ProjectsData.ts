@@ -40,7 +40,7 @@ const projectsData: IProjectData[] = [
     repo: 'battleship',
     liveDemo: 'battleship',
     description: 'Classical board game, playable against bot.',
-    usedStack: 'React, Jest, Typescript, Styled-Components',
+    usedStack: 'Jest, React, Typescript, Styled-Components',
   },
 ];
 

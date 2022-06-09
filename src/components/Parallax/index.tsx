@@ -1,21 +1,11 @@
 import React from 'react';
 
+import { ParallaxProps } from '../helpers/definitions';
 import {
   Container, Parallaxes, ParallaxWrapper, ParallaxItem,
 } from './styles';
-/**
- * first parallax item is the front one.
- */
 
-interface Props {
-  front?: boolean;
-  middle?: boolean;
-  back?: boolean;
-  verticalMove: number;
-  horizontalMove: number;
-}
-
-function Parallax({ verticalMove, horizontalMove }: Props) {
+function Parallax({ verticalMove, horizontalMove }: ParallaxProps) {
   return (
     <Container>
       <Parallaxes>

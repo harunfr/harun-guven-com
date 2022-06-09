@@ -1,15 +1,10 @@
 import styled from 'styled-components/macro';
-import testBg from '../../assets/testBg.png';
 
 export const Container = styled.header`
-  margin-top: -100px;
+  margin-top: -1rem;
   min-height: 550px;
-  padding: 120px 10px 150px 16px;
+  padding: 0 10px 150px 16px;
   background-color: transparent;
-
-  @media (max-width: 500px) {
-    margin-top: -160px;
-  }
 
   &::before {
     content: '';
@@ -25,30 +20,46 @@ export const Container = styled.header`
       top: 421px;
     }
   }
+  @media (max-width: 525px) {
+    margin-top: -3.1rem;
+  }
 `;
-
 export const MyName = styled.h1`
-  color: #0aa0d0;
+  color: var(--main-text);
   font-size: 3rem;
   font-weight: 900;
   font-family: 'Lato', Helvetica, sans-serif;
   line-height: 1.4;
 `;
-
 export const Intro = styled.div`
-  color: #eee;
+  color: #ddd;
   margin-top: 1.5rem;
   margin-bottom: 1.375rem;
-  /* font-family: 'Times New Roman'; */
-  /* font-family: 'WWWWWWWWWWWW'; */
-  /* font-family: 'Georgia'; v */
   font-family: 'American Typewriter';
-
   font-size: 1.7rem;
   line-height: 1.5;
-
   font-weight: 300;
-  /* padding-bottom: 90px; */
-  /* font-family: "Merriweather",serif; */
+
+  @media (max-width: 525px) {
+    margin-top: 0.35rem;
+  }
 `;
-// linear-gradient(to bottom right, #4F00BC 10%, #29ABE2 100%)
+export const Connections = styled.div`
+  display: flex;
+  column-gap: 1rem;
+`;
+const Link = styled.a`
+  color: #ddd;
+  font-size: 1.3rem;
+  text-decoration: underline dotted #ddd;
+  margin-top: -1rem;
+  cursor: pointer;
+  transition: color 1s ease, text-decoration-color 1s ease;
+
+  &:hover {
+    color: var(--main-text);
+    text-decoration-color: goldenrod;
+  }
+`;
+export const Github = styled(Link)``;
+export const Email = styled(Link)``;

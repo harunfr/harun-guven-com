@@ -5,17 +5,12 @@ export const Container = styled.section`
   flex-direction: column;
   gap: 111px;
   padding: 0 1rem;
-
   > * {
     &:nth-child(odd) {
       flex-direction: row-reverse;
     }
-    &:nth-child(even) {
-      /* flex-direction: row; */
-    }
   }
 `;
-
 export const Title = styled.h2`
   position: relative;
   margin: -60px 0 -20px 0;
@@ -35,17 +30,19 @@ export const Title = styled.h2`
     bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #0aa0d0;
+    background-color: var(--main-text);
   }
 `;
-
 export const ProjectContainer = styled.article`
   display: flex;
   align-items: center;
-  gap: 1rem;
+  column-gap: 1.2rem;
 
-  @media (max-width: 650px) {
-    flex-direction: column !important;
+  && {
+    @media (max-width: 650px) {
+      flex-direction: column;
+      row-gap: 1rem;
+    }
   }
 `;
 export const ProjectScreenShot = styled.img`
@@ -67,19 +64,21 @@ export const ProjectScreenShot = styled.img`
 export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 2rem;
+  height: 100%;
+  width: 100%;
 `;
 export const ProjectName = styled.h4`
   align-self: center;
   font-size: 1.25rem;
-  color: #0aa0d0;
+  color: var(--main-text);
   font-weight: 400;
 `;
 export const ProjectLinks = styled.div``;
 export const Link = styled.a`
   margin-right: 25px;
-  color: #0aa0d0;
-  color: '#0AA0D0';
+  color: var(--main-text);
+  color: 'var(--main-text)';
   text-decoration: 'none';
   position: 'relative';
   border-bottom: '1px solid rgba(10,160,208,0.2)';

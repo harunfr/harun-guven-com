@@ -9,11 +9,9 @@ const usedTechnologies = 'Typescript,\u00A0Javascript,\u00A0Webpack,\u00A0React,
 function Technologies() {
   return (
     <Container>
-      {/* <FixedWrapper> */}
       <SlidingWrapper>{usedTechnologies}</SlidingWrapper>
-      {/* </FixedWrapper> */}
     </Container>
   );
 }
-// FixedWrapper
+
 export default Technologies;

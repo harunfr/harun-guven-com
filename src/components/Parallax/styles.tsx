@@ -1,34 +1,24 @@
 import styled from 'styled-components/macro';
-// import testBg from '../../assets/testBg.webp';
+
+import { ParallaxProps } from '../helpers/definitions';
 import parallaxBackground from '../../assets/parallax-bg.png';
 
-/** horizontal factor is 5.66 for front, 5.66 * 3 / 2 for middle and 5.66 * 3 / 1 for back. */
-/** vertical factor is 8.4 for front, 8.4 * 3 / 2 for middle and 8.4 * 3 / 1 for back. */
-// this transition can be choosen too transition: transform 3s cubic-bezier(0.01, 1.16, 0.26, 1.27);
+/** horizontal factor is 5.66 for front, 5.66 * 3 / 2 for middle --- */
+/* --- and 5.66 * 3 / 1 for back. */
+
+/** vertical factor is 8.4 for front, 8.4 * 3 / 2 for middle --- */
+/* --- and 8.4 * 3 / 1 for back. */
 
 export const Container = styled.div`
   z-index: -1;
   position: absolute;
-  /* border: 10px solid green; */
   background: linear-gradient(to bottom right, #4f00bc 10%, #29abe2 100%);
   left: 0;
   top: 0;
   width: 100%;
   height: 550px;
-  /* height: 100%; */
   overflow: hidden;
-
-  /* &::after {
-    clear: both;
-    content: " ";
-    display: table;
-  }
-  &::before {
-    content: " ";
-    display: table;
-  } */
 `;
-
 export const Parallaxes = styled.ul`
   position: relative;
   transform: translate3d(0px, 0px, 0px);
@@ -37,18 +27,8 @@ export const Parallaxes = styled.ul`
   width: 100%;
   height: 92%;
   opacity: 1;
-  /* animation: parallax-pattern 3.1s ease; */
 `;
-
-interface Props {
-  front?: boolean;
-  middle?: boolean;
-  back?: boolean;
-  horizontalMove: number;
-  verticalMove: number;
-}
-
-export const ParallaxWrapper = styled.li.attrs<Props>((props) => ({
+export const ParallaxWrapper = styled.li.attrs<ParallaxProps>((props) => ({
   style: {
     transform: `translate3d(${
       props.front
@@ -64,7 +44,7 @@ export const ParallaxWrapper = styled.li.attrs<Props>((props) => ({
           : props.horizontalMove / 16.98
     }px, 0)`,
   },
-}))<Props>`
+}))<ParallaxProps>`
   position: absolute;
   transform-style: preserve-3d;
   backface-visibility: hidden;
@@ -76,12 +56,14 @@ export const ParallaxWrapper = styled.li.attrs<Props>((props) => ({
   top: 0px;
   transition: transform 0.5s ease-out;
 `;
-// cubic-bezier(0.01, 1.16, 0.26, 1.27)
-export const ParallaxItem = styled.div<{
+
+interface ILayer {
   front?: boolean;
   middle?: boolean;
   back?: boolean;
-}>`
+}
+
+export const ParallaxItem = styled.div<ILayer>`
   background-image: url('${parallaxBackground}');
   background-repeat: repeat;
   display: block;
