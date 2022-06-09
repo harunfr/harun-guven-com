@@ -15,11 +15,11 @@ import {
 
 interface ProjectProps {
   name: string;
-  screenshotSource: string;
-  sourceSubDir: string;
-  liveLinkSubDir: string;
+  src: string;
+  repo: string;
+  liveDemo: string;
   description: string;
-  usedTechnologies: string;
+  usedStack: string;
 }
 
 const myGithubBaseURL = 'https://github.com/harunfr/';
@@ -27,15 +27,15 @@ const myLiveLinkBaseURL = 'https://harunfr.github.io/';
 
 function Project({
   name,
-  screenshotSource,
-  sourceSubDir,
-  liveLinkSubDir,
+  src,
+  repo,
+  liveDemo,
   description,
-  usedTechnologies,
+  usedStack,
 }: ProjectProps) {
   return (
     <ProjectContainer>
-      <ProjectScreenShot src={screenshotSource} alt="Screenshot of project." />
+      <ProjectScreenShot src={src} alt="Screenshot of project." />
       <ProjectInfo>
         <ProjectName>{name}</ProjectName>
         <ProjectDescription>{description}</ProjectDescription>
@@ -44,7 +44,7 @@ function Project({
             target="_blank"
             rel="noreferrer noopener"
             className="source-code-link"
-            href={`${myGithubBaseURL + sourceSubDir}`}
+            href={`${myGithubBaseURL + repo}`}
           >
             Live Link
           </Link>
@@ -52,12 +52,12 @@ function Project({
             target="_blank"
             rel="noreferrer noopener"
             className="source-code-link"
-            href={`${myLiveLinkBaseURL + liveLinkSubDir}`}
+            href={`${myLiveLinkBaseURL + liveDemo}`}
           >
             Source Code
           </Link>
         </ProjectLinks>
-        <Footer>{usedTechnologies}</Footer>
+        <Footer>{usedStack}</Footer>
       </ProjectInfo>
     </ProjectContainer>
   );

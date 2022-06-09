@@ -1,48 +1,49 @@
-import testSource from '../../assets/test.webp';
+import riddleeeySrc from './images/riddleeey.webp';
+import t2048Src from './images/2048.webp';
+import battleshipSrc from './images/battleship.webp';
 
-const projectsData = [
+export interface IProjectData {
+  id: number;
+  name: string;
+  src: string;
+  repo: string;
+  liveDemo: string;
+  description: string;
+  usedStack: string;
+}
+
+const projectsData: IProjectData[] = [
   {
     id: 1,
-    name: 'Project Name-1',
-    screenshotSource: testSource,
-    sourceSubDir: 'string;',
-    liveLinkSubDir: 'string;',
+    name: 'Riddleey',
+    src: riddleeeySrc,
+    repo: 'string;',
+    liveDemo: 'string;',
     description:
       'A large mall was looking for a redesign to improve the online browsing experience for local and international visitors.',
-    usedTechnologies:
+    usedStack:
       'User Experience Documentation, Design, HTML/CSS, WordPress Integration',
   },
   {
     id: 2,
-    name: 'Project Name-2',
-    screenshotSource: testSource,
-    sourceSubDir: 'string;',
-    liveLinkSubDir: 'string;',
+    name: '2048',
+    src: t2048Src,
+    repo: 'string;',
+    liveDemo: 'string;',
     description:
       'lorem ipsum dolor sit amet, I memorized this lorem because I use it pretty much anywhere.',
-    usedTechnologies:
+    usedStack:
       'User Experience Documentation, Design, HTML/CSS, WordPress Integration',
   },
   {
     id: 3,
-    name: 'Project Name-3',
-    screenshotSource: testSource,
-    sourceSubDir: 'string;',
-    liveLinkSubDir: 'string;',
+    name: 'Battleship',
+    src: battleshipSrc,
+    repo: 'string;',
+    liveDemo: 'string;',
     description:
       'lorem ipsum dolor sit amet, I memorized this lorem because I use it pretty much anywhere.',
-    usedTechnologies:
-      'User Experience Documentation, Design, HTML/CSS, WordPress Integration',
-  },
-  {
-    id: 4,
-    name: 'Project Name-4',
-    screenshotSource: testSource,
-    sourceSubDir: 'string;',
-    liveLinkSubDir: 'string;',
-    description:
-      'lorem ipsum dolor sit amet, I memorized this lorem because I use it pretty much anywhere.',
-    usedTechnologies:
+    usedStack:
       'User Experience Documentation, Design, HTML/CSS, WordPress Integration',
   },
 ];

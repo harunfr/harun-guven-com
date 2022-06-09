@@ -8,17 +8,21 @@ function Projects() {
   return (
     <Container id="projects">
       <Title>My Projects</Title>
-      {projectsData.map((project) => (
-        <Project
-          key={project.id}
-          name={project.name}
-          screenshotSource={project.screenshotSource}
-          sourceSubDir={project.sourceSubDir}
-          liveLinkSubDir={project.liveLinkSubDir}
-          description={project.description}
-          usedTechnologies={project.usedTechnologies}
-        />
-      ))}
+      {projectsData.map(
+        ({
+          id, name, src, repo, liveDemo, description, usedStack,
+        }) => (
+          <Project
+            key={id}
+            name={name}
+            src={src}
+            repo={repo}
+            liveDemo={liveDemo}
+            description={description}
+            usedStack={usedStack}
+          />
+        ),
+      )}
     </Container>
   );
 }
