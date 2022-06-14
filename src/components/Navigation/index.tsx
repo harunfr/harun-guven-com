@@ -14,8 +14,13 @@ import {
 function Navigation({ isViewingHeader }: NavProps) {
   return (
     <Container isViewingHeader={isViewingHeader}>
-      <LogoWrapper>
-        <Logo title="Not Ready Yet..." />
+      <LogoWrapper
+        target="_blank"
+        rel="noreferrer noopener"
+        href="https://harunfr.github.io/digital-garden"
+        title="Harun Guven's Digital Garden"
+      >
+        <Logo />
       </LogoWrapper>
       <NavList>
         <ListItem>
