@@ -2,7 +2,7 @@
   "name": "harun-guven-com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://harunguven.com",
+  "homepage": "https://harunfr.github.io/harun-guven-com",
   "dependencies": {
     "@types/node": "^16.11.27",
     "@types/react": "^18.0.6",
