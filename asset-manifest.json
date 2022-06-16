@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.06e46ec2.js",
-    "static/media/battleship.webp": "/static/media/battleship.518e530fd8d8134f25f5.webp",
-    "static/media/2048.webp": "/static/media/2048.3e5cc28387e8e1d42d51.webp",
-    "static/media/riddleeey.webp": "/static/media/riddleeey.4cf533873d407775e3e8.webp",
-    "index.html": "/index.html",
-    "main.06e46ec2.js.map": "/static/js/main.06e46ec2.js.map"
+    "main.js": "/harun-guven-com/static/js/main.8f27bded.js",
+    "static/media/battleship.webp": "/harun-guven-com/static/media/battleship.518e530fd8d8134f25f5.webp",
+    "static/media/2048.webp": "/harun-guven-com/static/media/2048.3e5cc28387e8e1d42d51.webp",
+    "static/media/riddleeey.webp": "/harun-guven-com/static/media/riddleeey.4cf533873d407775e3e8.webp",
+    "index.html": "/harun-guven-com/index.html",
+    "main.8f27bded.js.map": "/harun-guven-com/static/js/main.8f27bded.js.map"
   },
   "entrypoints": [
-    "static/js/main.06e46ec2.js"
+    "static/js/main.8f27bded.js"
   ]
 }
