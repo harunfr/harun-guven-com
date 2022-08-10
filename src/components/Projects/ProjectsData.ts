@@ -1,6 +1,7 @@
 import riddleeeySrc from './images/riddleeey.webp';
 import t2048Src from './images/2048.webp';
 import battleshipSrc from './images/battleship.webp';
+import wallCalendarSrc from './images/wall-calendar.webp';
 
 export interface IProjectData {
   id: number;
@@ -25,6 +26,15 @@ const projectsData: IProjectData[] = [
   },
   {
     id: 2,
+    name: 'Wall Calendar',
+    src: wallCalendarSrc,
+    repo: 'wall-calendar',
+    liveDemo: 'wall-calendar',
+    description: 'Old fashioned calendar, uses 6 api to show datas.',
+    usedStack: 'React, Typescript',
+  },
+  {
+    id: 3,
     name: '2048',
     src: t2048Src,
     repo: '2048',
@@ -34,7 +44,7 @@ const projectsData: IProjectData[] = [
     usedStack: 'React, Typescript, Styled-Components',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Battleship',
     src: battleshipSrc,
     repo: 'battleship',

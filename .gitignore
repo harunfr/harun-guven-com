@@ -3,6 +3,11 @@
 # my notes
 Notes.txt
 
+# lock files
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
 # dependencies
 /node_modules
 /.pnp
